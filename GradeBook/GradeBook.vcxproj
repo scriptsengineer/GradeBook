@@ -151,7 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Analysis.cpp" />
     <ClCompile Include="GradeBook.cpp" />
+    <ClCompile Include="GradeBookRun.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Analysis.h" />
+    <ClInclude Include="GradeBook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
