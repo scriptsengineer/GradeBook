@@ -24,12 +24,18 @@
     <ClCompile Include="Analysis.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="Craps.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GradeBook.h">
       <Filter>Arquivos de Origem</Filter>
     </ClInclude>
     <ClInclude Include="Analysis.h">
+      <Filter>Arquivos de Origem</Filter>
+    </ClInclude>
+    <ClInclude Include="Craps.h">
       <Filter>Arquivos de Origem</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,3 @@
-﻿  GradeBook.cpp
-  GradeBookRun.cpp
-  Gerando Código...
+﻿  Craps.cpp
+E:\CPP\GradeBook\GradeBook\Craps.cpp(20,12): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
   GradeBook.vcxproj -> E:\CPP\GradeBook\Debug\GradeBook.exe
