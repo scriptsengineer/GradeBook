@@ -77,53 +77,26 @@ void GradeBook::determineClassAverage() {
 }
 
 void GradeBook::inputGrades() {
-	int grade;
-	cout << "Enter the letter grades." << endl
-		<< "Enter the EOF character to end input." << endl;
+	int grade1;
+	int grade2;
+	int grade3;
 
-	while ((grade = cin.get()) != EOF) {
-		switch (grade)
-		{
-		case 'A':
-		case 'a':
-			aCount++;
-			break;
-		case 'B':
-		case 'b':
-			bCount++;
-			break;
-		case 'C':
-		case 'c':
-			aCount++;
-			break;
-		case 'D':
-		case 'd':
-			dCount++;
-			break;
-		case 'F':
-		case 'f':
-			fCount++;
-			break;
-		case '\n':
-		case '\t':
-		case ' ':
-			break;
-		default:
-			cout << "Incorrect letter grade entered."
-				<< "Enter new grade." << endl;
-			break;
-		}
-	}
+	cout << "Enter three grades: ";
+	cin >> grade1 >> grade2 >> grade3;
+
+	studentMaximum = maximum(grade1, grade2, grade3);
+
+}
+
+int GradeBook::maximum(int x, int y, int z) {
+	int maximumValue = x;
+	if (y > maximumValue) maximumValue = y;
+	if (z > maximumValue) maximumValue = z;
+	return maximumValue;
 }
 
 void GradeBook::displayGradeReport() {
-	cout << "\n\nNumber of students who received each letter grade:"
-		<< "\nA:" << aCount
-		<< "\nB:" << bCount
-		<< "\nC:" << cCount
-		<< "\nD:" << dCount
-		<< "\nF:" << fCount
-		<< endl;
+	cout << "Maximum of grades entered : " << studentMaximum << endl;
 
 }
 
